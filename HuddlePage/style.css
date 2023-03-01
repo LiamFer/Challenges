@@ -75,7 +75,7 @@ div > p {
   padding: 10px;
 }
 
-main > a {
+#register-button {
   font-family: "Open Sans";
   font-size: 13px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.308);
@@ -87,7 +87,14 @@ main > a {
   border-radius: 100px;
 }
 
+#register-button:hover {
+  background-color: var(--color02);
+  color: white;
+  transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
+}
+
 footer {
+  min-height: 70px;
   flex-direction: row;
   display: flex;
   justify-content: center;
@@ -99,4 +106,9 @@ footer {
   width: 30px;
   height: 30px;
   fill: white;
+}
+
+.icons:hover {
+  fill: var(--color02);
+  transition: fill 0.3s ease-in-out, color 0.2s ease-in-out;
 }
