@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* Mobile First Version */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --color01: hsl(257, 40%, 49%);
+  --color02: hsl(300, 69%, 71%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(images/bg-mobile.svg);
+  background-color: var(--color01);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  color: white;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+header {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
+  flex-direction: row;
+}
+
+header > img {
+  width: 200px;
+  padding: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+main > img {
+  width: 320px;
+}
+
+div {
+  min-width: 300px;
+  max-width: 370px;
+  padding: 20px;
+}
+
+div > h1 {
+  font-family: "Poppins";
+  font-size: 25px;
+  padding: 10px;
+}
+
+div > p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  padding: 10px;
+}
+
+main > a {
+  font-family: "Open Sans";
+  font-size: 13px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.308);
+  text-decoration: none;
+  color: var(--color01);
+  background-color: white;
+  padding: 15px;
+  width: 225px;
+  border-radius: 100px;
+}
+
+footer {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  column-gap: 20px;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
